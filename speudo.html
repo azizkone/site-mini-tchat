@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="register.html">Accueil</a></li>
+        <li><a href="deconnexion.php">Deconnexion</a></li>
+    </ul>
+
+    <form action="functions.php" method="post" class="form_rl">
+    <input type="text" name='username' id='username' placeholder="Pseudo" />
+      <!--Votre message : <input type="text" name="message" /><br />-->
+    <input type="hidden" value="verificationUsername" name='anchor' id='anchor'>
+
+        <input type="submit" value="valider" id="ok">
+        <button type="reset">Deconnexion</button>
+    </form>
+</body>
+</html>
