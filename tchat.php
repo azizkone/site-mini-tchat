@@ -17,20 +17,20 @@ include "functions.php";
         <li><a href="deconnexion.php">Deconnexion</a></li>
     </ul>
 <div align="center" method="post">
-  <h2> Profil de <?php echo $_SESSION["username"]; ?></h2>
+  <h2> Profil de </h2>
   <br/>
   <br/>
-  <div id="tchat">
-    <?php
+<div id="tchat">
+ <?php
     $sql = "SELECT * FROM chat WHERE message ORDER BY date DESC LIMIT 15";
-    $resultatReq = requeteSql($sql);
-    $req =  mysql_query($resultatReq) OR die (mysql_error());
-    while ($db = mysql_fetch_assoc($req)) {
+   $resultatReq = requeteSql($sql);
+   $req =  mysql_query($resultatReq) OR die (mysql_error());
+   while ($db = mysql_fetch_assoc($req)) {
     ?>
     <?php
-    }
+}
      ?>
-      <p><strong><?php echo $db["username"];?></strong>:<?php echo htmlentities($db["message"]);?></p>
+    <p><strong><?php echo $db["username"];?></strong>:<?php echo htmlentities($db["message"]);?></p>*/
   </div>
   <br/>
   <br/>
